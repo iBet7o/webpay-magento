@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MCPayment WebPay Magento Module
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Mcpayment
+ * @package    Mcpayment_Webpay
+ * @copyright  Copyright (c) 2012 Mobile Credit Payment Pte Ltd
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Mcpayment_Webpay>
+            <version>1.0.0</version>
+        </Mcpayment_Webpay>
+    </modules>
+	<frontend>
+        <routers>
+            <webpay>
+                <use>standard</use>
+                <args>
+                    <module>Mcpayment_Webpay</module>
+                    <frontName>webpay</frontName>
+                </args>
+            </webpay>
+        </routers>
+    </frontend>
+    <global>
+        <models>
+            <webpay>
+                <class>Mcpayment_Webpay_Model</class>
+            </webpay>
+        </models>
+        <resources>
+            <webpay_setup>
+                <setup>
+                    <module>Mcpayment_Webpay</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </webpay_setup>
+            <webpay_write>
+                <use>core_write</use>
+            </webpay_write>
+            <webpay_read>
+                <use>core_read</use>
+            </webpay_read>
+        </resources>
+        <helpers>
+            <webpay>
+                <class>Mcpayment_Webpay_Helper</class>
+            </webpay>
+        </helpers>
+        <blocks>
+            <webpay><class>Mcpayment_Webpay_Block</class></webpay>
+        </blocks>
+    </global>
+
+    <default>
+        <payment>
+            <webpay>
+                <active>0</active>
+                <model>webpay/webpay</model>
+                <order_status>1</order_status>
+                <title>Credit Card (via MCPayment)</title>
+				<recurring>0</recurring>
+                <mc_id />
+                <mc_securekey />
+            </webpay>
+        </payment>
+    </default>
+</config>

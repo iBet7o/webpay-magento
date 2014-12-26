@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package>
+    <name>Mcpayment_Webpay</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>http://opensource.org/licenses/osl-3.0.php</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>MCpayment gateway</summary>
+    <description>MCpayment gateway</description>
+    <notes>New version</notes>
+    <authors><author><name>Mobile Credit Payment</name><user>mcpayment</user><email>support@mcpayment.com</email></author></authors>
+    <date>2012-11-15</date>
+    <time>04:21:09</time>
+    <contents>
+		<target name="magelocal">
+			<dir name="Mcpayment">
+				<dir name="Webpay">
+					<dir name="Block">
+						<file name="Form.php" hash="32bf011c1ffcba0bc7602f40b55db979"/>
+						<file name="Info.php" hash="a9319830c051da92daa746af463875e3"/>
+					</dir>
+					<dir name="Helper">
+						<file name="Data.php" hash="725040ce2540ce92685db45ddc6f162f"/>
+					</dir>
+					<dir name="Model">
+						<dir name="Source">
+							<file name="TransactionMode.php" hash="3088be0c9a99269cea70ad5d0785e234"/>
+						</dir>
+						<file name="Webpay.php" hash="1b7c43a7c97bbd342b295a1e8a8dfc9d"/>
+					</dir>
+					<dir name="controllers">
+						<file name="PaymentController.php" hash="4f3f6f34e1e6302d52da5cc7813c05ad"/>
+					</dir>
+					<dir name="etc">
+						<file name="config.xml" hash="df1044da9ac2e49ffd4ebdabd54364ac"/>
+						<file name="system.xml" hash="756250c86c78b89cab4ea903463fff8d"/>
+					</dir>
+				</dir>
+			</dir>
+		</target>
+		<target name="mageetc"><dir name="modules"><file name="Mcpayment_Webpay.xml" hash="b930437b9ddfc68329f5453807c45674"/></dir></target>
+	</contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
