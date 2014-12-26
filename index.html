@@ -29,9 +29,43 @@
       </header>
       <section>
         <h1>
-<a name="webpay-magento" class="anchor" href="#webpay-magento"><span class="octicon octicon-link"></span></a>webpay-magento</h1>
+<a id="webpay-magento" class="anchor" href="#webpay-magento" aria-hidden="true"><span class="octicon octicon-link"></span></a>webpay-magento</h1>
 
 <p>Magento Payment Gateway Extension for WebPay integration.</p>
+
+<h1>
+<a id="a-how-to-guide" class="anchor" href="#a-how-to-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>A how to Guide</h1>
+
+<p>Manual Installation</p>
+
+<pre><code>1. Download package as .zip or .tar
+2. Upload to your maagento's website root folder.
+3. Extract the uploaded package.
+</code></pre>
+
+<p>Automated Installation (via Magento Connect)</p>
+
+<pre><code>1. Go to “System =&gt; Magento Connect =&gt; Magento Connect Manager”, use your Magento admin account to login.
+2. In “Direct package file upload” area, choose payment zip file, then Upload it, it will install payment module into your Magento site.
+</code></pre>
+
+<h1>
+<a id="setting-up-the-module" class="anchor" href="#setting-up-the-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setting up the module</h1>
+
+<pre><code>1) Go to payment methods page: “System =&gt; Configuration”, then “Payment Methods” in the left.
+2) Find “Credit Card (via MCPayment)”, click it to open.
+3) Enable payment module.
+4) Choose Recurring to Yes if you want recurring payment.
+5) Select order status for order before paying on MCpayment website, usually ‘pending’.
+6) Input ‘merchant ID’, ‘secure key’, these are from your MCpayment merchant account.
+7) Choose Transaction Mode ‘live’ if you want to make live transactions.
+8) Input ‘sort order’ number, this is for payment ordering in payment list at front-end, when customer checkout.
+</code></pre>
+
+<h1>
+<a id="questions-and-support" class="anchor" href="#questions-and-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Questions And Support</h1>
+
+<p>If you have any problem with the module do not hesitate to contact us through email(<a href="mailto:support-technical-integration@mcpayment.com">support-technical-integration@mcpayment.com</a>). We'll be more than happy to fulfill our client's need and will attend to you as soon as possible.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/mcpayment">mcpayment</a></p>
